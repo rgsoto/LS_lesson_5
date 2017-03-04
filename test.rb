@@ -1,8 +1,20 @@
-arr = ['10', '11', '9', '7', '8']
+=begin
+munsters = {
+  "Herman" => { "age" => 32,},
+  "Lily" => { "age" => 30,},
+  "Grandpa" => { "age" => 402,},
+  "Eddie" => { "age" => 10,},
+  "Marilyn" => { "age" => 23,}
+}
 
-arr.sort! do |a,b|
-  b.to_i <=> a.to_i
+
+
+munsters.each_value do |value|
+  value + 1
 end
 
-puts arr
+puts munsters
+=end
 
+h = { "a" => 100, "b" => 200 }
+h.each_value {|value| puts value +1 }
